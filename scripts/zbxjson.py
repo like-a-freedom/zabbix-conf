@@ -2,6 +2,7 @@ import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error,
 import sys
 import json
 from docopt import docopt
+import codecs
 #   from ntlm import HTTPNtlmAuthHandler
 
 # Get element from JSON path
@@ -83,7 +84,8 @@ Options:
 
   # Load the response as a JSON object   
   try:
-    obj = json.load(connection)
+    reader = codecs.getreader("utf-8")
+    obj = json.load(reader(connection))
   except:
     print("Cannot extract the JSON response")
     sys.exit(1)
