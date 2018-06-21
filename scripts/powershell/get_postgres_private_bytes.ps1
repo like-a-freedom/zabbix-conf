@@ -1,2 +1,1 @@
-$value = Get-Process -name "postgres" | Measure-Object -Property 'PrivateMemorySize' -Sum | select sum
-Write-Host("{0}" -f [math]::Truncate($value.Sum))
+[System.Convert]::ToInt64((Get-Process -name "postgres" | Measure -property 'PrivateMemorySize' -Sum).Sum)

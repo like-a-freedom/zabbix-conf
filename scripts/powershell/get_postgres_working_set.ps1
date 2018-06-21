@@ -1,0 +1,1 @@
+[System.Convert]::ToInt64((Get-Process -name "postgres" | Measure -property 'WorkingSet' -Sum).Sum)

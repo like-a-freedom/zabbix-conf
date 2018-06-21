@@ -7,12 +7,12 @@ Templates for Zabbix web-interface with appropriated keys.
 ## Scripts
 Some other stuff for additional monitoring
 ### - Python
-* zbxjson.py â€” script for monitoring REST API JSON data and its keys.
+* zbxjson.py — script for monitoring REST API JSON data and its keys.
 ### - PowerShell
 A number of simple posh scripts that sent SUM data of couple instances of processes:
-* get_fgindexer_proc_private_bytes_private_bytes.ps1
-* get_fgindexer_proc_private_bytes_working_set.ps1
+* get_fgindexer_proc_private_bytes.ps1
+* get_fgindexer_proc_working_set.ps1
 * get_postgres_private_bytes.ps1
-* get_postgres_private_bytes_working_set.ps1
+* get_postgres_working_set.ps1
 
 
