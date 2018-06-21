@@ -1,0 +1,1 @@
+[System.Convert]::ToInt64((Get-Process -name "FgIndexerProc*" | Measure -property 'PrivateMemorySize' -Sum).Sum)
